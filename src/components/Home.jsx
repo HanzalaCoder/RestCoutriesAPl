@@ -107,7 +107,7 @@ export default function Home() {
             </div>
         </section>
             <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-8 mb-12">
-            { searchDivs.length > 0 ? searchDivs : stockDivs}
+            {searchDivs ? searchDivs.length > 0 ? searchDivs : stockDivs : <p className="text-center text-2xl">Loading...</p>}
             </section>
         </section>
         
