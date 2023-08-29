@@ -6,7 +6,7 @@ export default function ShowCard(props) {
     return (
         <Link to={`${props.item.name.official}`} >
             <section className="bg-[#ffffff] dark:bg-[#2b3945] shadow-2xl max-w-[350px]  rounded-lg cursor-pointer">
-                    <div className="hover:scale-105 transition-transform delay-150 max-w-[330px]"  >
+                    <div className="hover:scale-105 transition-transform delay-150 max-w-[300px]"  >
                         <img  src={props.item.flags.png}alt={props.item.flags.alt} />
                     </div>
                     <div className="flex flex-col gap-4 p-4 font-semibold">
